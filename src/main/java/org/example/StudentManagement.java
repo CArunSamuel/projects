@@ -33,7 +33,8 @@ public class StudentManagement {
         String course = sc.nextLine();
 
        students[count++] = new Student(id, name,age, email, course);
-        System.out.println("New Student has been added!");
+       System.out.println("New Student has been added!");
+       System.out.println("Number of students in the system: " + count);
     }
 
     public void displayAllStudents() {
@@ -74,7 +75,7 @@ public class StudentManagement {
 
             Student student = students[i];
 
-            if(student.getName().equals(name)) {
+            if(student.getName().equalsIgnoreCase(name)) {
                 System.out.println("Student Found: " + student.getName());
                 return;
             }

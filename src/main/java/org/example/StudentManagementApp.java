@@ -9,6 +9,7 @@ public class StudentManagementApp {
         StudentManagement studentManagement = new StudentManagement();
 
         for(;;){
+            System.out.println("Welcome to Student Management System");
             System.out.println("\n 1.Add 2.Display Student Details 3.Search Student  4.Update Student Details. 5.Exit");
             System.out.print("\n Enter your choice : ");
 
